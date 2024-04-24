@@ -1,0 +1,35 @@
+# exercícios 24/04/2024
+
+print ("Olá", "Mundo", sep="-")
+
+print( "Olá", "Python", end="!\n")
+
+print ("18", "04", "2023", sep="/")
+
+print ("nome", "sobrenome", "email", sep=";")
+
+print("Loading", end="")
+print("[OK]")
+
+nome=input("Digite seu nome: ")
+print("Olá", nome)
+
+itens=input("Digite itens separados por virgula")
+itens= itens.split(",")
+print ("itens:", itens)
+
+idade=int(input("Digite sua idade: "))
+print ("Daqui a cinco anos, você terá", idade +5, "anos.")
+
+altura=float(input("Digite sua altura em metros: "))
+print("Sua altura é", altura, "metros")
+
+print("Digite numeros para adicionar à lista (digite 'done' para terminar):")
+numeros=[]
+while True:
+    entrada=input()
+    if entrada.lower()=='done':
+        break
+    else:
+        numeros.append(int(entrada))
+print("Numeros coletados", numeros)
